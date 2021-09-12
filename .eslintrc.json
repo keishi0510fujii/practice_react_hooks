@@ -1,7 +1,15 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended"
+    "plugin:react/recommended",
+    // Airbnbが提供する共有設定。広く使われている
+    "airbnb",
+    // 各プラグイン推奨共有設定
+    "airbnb/hooks",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "env": {
     "node": true
