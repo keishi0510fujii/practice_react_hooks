@@ -8,7 +8,10 @@ import AppContext from '../contexts/AppContext';
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const App = () => {
   // eslint-disable-next-line react/jsx-filename-extension
-  const [state, dispatch] = useReducer(reducer, []);
+  const initialState = {
+    events: [],
+  };
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
