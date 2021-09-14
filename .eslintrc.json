@@ -1,5 +1,6 @@
 {
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
     // Airbnbが提供する共有設定。広く使われている
     "airbnb",
